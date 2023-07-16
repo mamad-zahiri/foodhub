@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             {/* landing page background */}
-            <div className="-z-10 min-h-fit w-full translate-y-[-72px] transform bg-[url('./src/assets/img/home-page-bg.png')] bg-cover bg-no-repeat pt-[72px]">
+            <div className="-z-10 min-h-fit w-full translate-y-[-72px] transform bg-[url('/home-page-bg.png')] bg-cover bg-no-repeat pt-[72px]">
                 {/* landing page: start */}
                 <section className="relative flex min-h-[calc(100vh-72px)] w-full items-center bg-gradient-to-b from-transparent to-black">
                     <div className="mx-auto flex min-h-full max-w-6xl flex-col items-center justify-center gap-x-20 gap-y-10 px-4 py-4 md:flex-row md:gap-y-14">
@@ -65,7 +65,7 @@ const Home = () => {
                 <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
                     <img
                         src={getImageUrl("home-categories-hamburger.png")}
-                        className="drop-shadow-dark absolute bottom-2 left-[-18px] w-44"
+                        className="absolute bottom-2 left-[-18px] w-44 drop-shadow-dark"
                         alt="Hamburger"
                     />
                     <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
@@ -80,7 +80,7 @@ const Home = () => {
                 <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-green-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
                     <img
                         src={getImageUrl("home-categories-chips.png")}
-                        className="drop-shadow-dark absolute bottom-3 left-[-25px] w-48"
+                        className="absolute bottom-3 left-[-25px] w-48 drop-shadow-dark"
                         alt="Hamburger"
                     />
                     <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
@@ -95,7 +95,7 @@ const Home = () => {
                 <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-amber-500 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
                     <img
                         src={getImageUrl("home-categories-smoothie.png")}
-                        className="drop-shadow-dark absolute bottom-2 left-[0px] w-36 transform"
+                        className="absolute bottom-2 left-[0px] w-36 transform drop-shadow-dark"
                         alt="Hamburger"
                     />
                     <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
