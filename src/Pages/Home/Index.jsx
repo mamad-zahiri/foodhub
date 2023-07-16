@@ -57,6 +57,57 @@ const Home = () => {
                 </section>
                 {/* landing page: start */}
             </div>
+
+            <Hr />
+
+            {/* categories: start */}
+            <SectionFlex className="my-12 gap-x-20 gap-y-10 p-4 md:gap-y-14">
+                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
+                    <img
+                        src={getImageUrl("home-categories-hamburger.png")}
+                        className="drop-shadow-dark absolute bottom-2 left-[-18px] w-44"
+                        alt="Hamburger"
+                    />
+                    <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
+                        <h4 className="font-[Staatliches] text-4xl text-white">FOOD</h4>
+                        <p className="text-xs text-white">A warm family dinner</p>
+                        <a href="" className="mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-red-700">
+                            Buy One
+                        </a>
+                    </div>
+                </div>
+
+                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-green-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
+                    <img
+                        src={getImageUrl("home-categories-chips.png")}
+                        className="drop-shadow-dark absolute bottom-3 left-[-25px] w-48"
+                        alt="Hamburger"
+                    />
+                    <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
+                        <h4 className="font-[Staatliches] text-4xl text-white">SNACK</h4>
+                        <p className="text-xs text-white">Have with your friends</p>
+                        <a href="" className="mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-green-700">
+                            Buy One
+                        </a>
+                    </div>
+                </div>
+
+                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-amber-500 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
+                    <img
+                        src={getImageUrl("home-categories-smoothie.png")}
+                        className="drop-shadow-dark absolute bottom-2 left-[0px] w-36 transform"
+                        alt="Hamburger"
+                    />
+                    <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
+                        <h4 className="font-[Staatliches] text-4xl text-white">BEVERAGE</h4>
+                        <p className="text-xs text-white">For your hot days</p>
+                        <a href="" className="mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-amber-600">
+                            Buy One
+                        </a>
+                    </div>
+                </div>
+            </SectionFlex>
+            {/* categories: end */}
         </>
     )
 }

@@ -12,6 +12,9 @@ export default {
             animation: {
                 "up-down": "up-down 2s ease-in-out infinite",
             },
+            dropShadow: {
+                dark: "0 35px 25px #000",
+            },
         },
     },
     plugins: [],
