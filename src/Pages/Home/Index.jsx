@@ -62,7 +62,7 @@ const Home = () => {
 
             {/* categories: start */}
             <SectionFlex className="my-12 gap-x-20 gap-y-10 p-4 md:gap-y-14">
-                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
+                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                     <img
                         src={getImageUrl("home-categories-hamburger.png")}
                         className="absolute bottom-2 left-[-18px] w-44 drop-shadow-dark"
@@ -77,7 +77,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-green-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
+                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-green-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                     <img
                         src={getImageUrl("home-categories-chips.png")}
                         className="absolute bottom-3 left-[-25px] w-48 drop-shadow-dark"
@@ -92,7 +92,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-amber-500 shadow-2xl shadow-slate-800 [&>img]:hover:animate-up-down">
+                <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-amber-500 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                     <img
                         src={getImageUrl("home-categories-smoothie.png")}
                         className="absolute bottom-2 left-[0px] w-36 transform drop-shadow-dark"
