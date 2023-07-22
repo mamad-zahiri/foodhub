@@ -18,8 +18,10 @@ export default defineConfig({
                 quality: 20,
             },
             pngquant: {
-                quality: [0.8, 0.9],
+                // quality: [0.8, 0.9],
+                quality: [0.7, 0.8],
                 speed: 4,
+                strip: true,
             },
             svgo: {
                 plugins: [
