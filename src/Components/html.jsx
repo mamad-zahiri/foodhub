@@ -5,10 +5,16 @@ const SectionFlex = (props) => {
 
 const Hr = () => <hr className="mx-auto max-w-sm border-gray-800 md:max-w-xl lg:max-w-4xl" />
 
-const ByOneBtn = (props) => (
-    <a href={props.href} className={"mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-gray-950 " + props.className}>
-        {props.children ? props.children : "Buy One"}
+const BuyOneBtn = ({ bg, fg, href, className, children }) => (
+    <a
+        href={href ? href : ""}
+        className={`mt-2 rounded-full px-4 py-1 text-sm
+        ${bg ? bg : "bg-slate-50"} 
+        ${fg ? fg : "text-gray-900"} 
+        ${className ? className : ""}`}
+    >
+        {children ? children : "Buy One"}
     </a>
 )
 
-export { SectionFlex, Hr, ByOneBtn }
+export { SectionFlex, Hr, BuyOneBtn }

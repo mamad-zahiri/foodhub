@@ -1,5 +1,5 @@
 import { getImageUrl } from "../../utils/helper"
-import { SectionFlex, Hr, ByOneBtn } from "../../Components/html"
+import { SectionFlex, Hr, BuyOneBtn } from "../../Components/html"
 
 const Home = () => {
     return (
@@ -71,9 +71,7 @@ const Home = () => {
                     <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                         <h4 className="font-[Staatliches] text-4xl text-white">FOOD</h4>
                         <p className="text-xs text-white">A warm family dinner</p>
-                        <a href="" className="mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-red-700">
-                            Buy One
-                        </a>
+                        <BuyOneBtn href="" fg="text-red-700" />
                     </div>
                 </div>
 
@@ -86,9 +84,7 @@ const Home = () => {
                     <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                         <h4 className="font-[Staatliches] text-4xl text-white">SNACK</h4>
                         <p className="text-xs text-white">Have with your friends</p>
-                        <a href="" className="mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-green-700">
-                            Buy One
-                        </a>
+                        <BuyOneBtn fg="text-green-700" />
                     </div>
                 </div>
 
@@ -101,9 +97,7 @@ const Home = () => {
                     <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                         <h4 className="font-[Staatliches] text-4xl text-white">BEVERAGE</h4>
                         <p className="text-xs text-white">For your hot days</p>
-                        <a href="" className="mt-2 rounded-full bg-slate-200 px-4 py-1 text-sm text-amber-600">
-                            Buy One
-                        </a>
+                        <BuyOneBtn fg="text-amber-600" />
                     </div>
                 </div>
             </SectionFlex>
@@ -119,7 +113,7 @@ const Home = () => {
                             <p className="text-[11px] text-yellow-400 sm:text-xs">PayDay Promo</p>
                             <h4 className="font-[Staatliches] text-3xl text-white">GET 10% DISCOUNT ON PAYDAY WEEK</h4>
                             <h4 className="text-xs text-slate-400">Get 10% discount on our bigget Burger on this week.</h4>
-                            <ByOneBtn className="bg-yellow-400 text-black" href="" />
+                            <BuyOneBtn bg="bg-yellow-400" />
                         </div>
                         <figure className="flex w-2/5 items-center justify-center">
                             <img src={getImageUrl("home-off-hamburger.png")} alt="cola drink off" className="w-44 drop-shadow-dark" />
@@ -133,7 +127,7 @@ const Home = () => {
                             <p className="text-[11px] text-yellow-400 sm:text-xs">PayDay Promo</p>
                             <h4 className="font-[Staatliches] text-3xl text-white">BUY 1 COKE GET MORE 1 FREE COKE</h4>
                             <h4 className="text-xs text-slate-400">Enjoy having free drink with your friend with us.</h4>
-                            <ByOneBtn className="bg-yellow-400 text-black" href="" />
+                            <BuyOneBtn bg="bg-yellow-400" />
                         </div>
                         <figure className="flex w-2/5 items-center justify-center">
                             <img src={getImageUrl("home-off-drink.png")} alt="cola drink off" className="w-44 drop-shadow-dark" />
