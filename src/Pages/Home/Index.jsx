@@ -61,7 +61,7 @@ const Home = () => {
             <Hr />
 
             {/* categories: start */}
-            <SectionFlex className="my-12 gap-x-20 gap-y-10 p-4 md:gap-y-14">
+            <SectionFlex className="gap-x-20 gap-y-10 p-4 md:gap-y-14">
                 <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                     <img
                         src={getImageUrl("home-categories-hamburger.png")}
@@ -140,7 +140,7 @@ const Home = () => {
             <Hr />
 
             {/* about us: start */}
-            <SectionFlex className="my-14 gap-x-8 px-4 lg:px-0">
+            <SectionFlex className="gap-x-8 px-4 lg:px-0">
                 <figure className="mb-7 flex w-full lg:mb-0 lg:w-1/2">
                     <img src={getImageUrl("home-our-brand.jpg")} alt="foodhub brand" className="max-w-full rotate-180 rounded-2xl" />
                 </figure>
