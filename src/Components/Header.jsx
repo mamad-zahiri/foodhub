@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { changeDocTitle } from "../utils/document"
 
 const Header = () => {
     const navBarItems = [
@@ -25,7 +26,14 @@ const Header = () => {
             >
                 {navBarItems.map((nav) => {
                     return (
-                        <Link className={activeNav == nav.key ? "text-yellow-400" : ""} onClick={() => setActiveNav(nav.key)} to={nav.to}>
+                        <Link
+                            className={activeNav == nav.key ? "text-yellow-400" : ""}
+                            onClick={() => {
+                                setActiveNav(nav.key)
+                                changeDocTitle(`${nav.text} - FoodHub`)
+                            }}
+                            to={nav.to}
+                        >
                             {nav.text}
                         </Link>
                     )
