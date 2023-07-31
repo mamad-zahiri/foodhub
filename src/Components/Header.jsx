@@ -33,6 +33,7 @@ const Header = () => {
                                 changeDocTitle(`${nav.text} - FoodHub`)
                             }}
                             to={nav.to}
+                            key={nav.key}
                         >
                             {nav.text}
                         </Link>
