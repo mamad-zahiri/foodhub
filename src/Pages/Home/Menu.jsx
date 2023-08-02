@@ -67,7 +67,7 @@ const Menu = () => {
                             <div className="aspect-square w-full flex items-center justify-center mb-5">
                                 <div
                                     style={{
-                                        background: `url(/img/${item.imageURL})`,
+                                        background: `url(./img/${item.imageURL})`,
                                         backgroundPosition: "center",
                                         backgroundSize: "cover",
                                     }}
