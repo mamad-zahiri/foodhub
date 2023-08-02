@@ -28,13 +28,21 @@ export default {
                         transform: "rotate(0)",
                     },
                 },
+                "fade-in": {
+                    "0%": { display: "block", opacity: 0 },
+                    "100%": { opacity: 1 },
+                },
             },
             animation: {
                 "up-down": "up-down 2s ease-in-out infinite",
                 wiggle: "wiggle 1s ease infinite",
+                "fade-in": "fade-in 0.3s ease-in-out",
             },
             dropShadow: {
                 dark: "0 35px 25px #000",
+            },
+            fontFamily: {
+                title: ["Staatliches"],
             },
         },
     },

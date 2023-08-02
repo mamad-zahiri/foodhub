@@ -3,6 +3,7 @@ import Landing from "./Landing"
 import Categories from "./Categories"
 import PayDay from "../../Components/PayDay"
 import AboutUs from "./AboutUs"
+import Menu from "./Menu"
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Hr />
             <AboutUs />
             <Hr />
+            <Menu />
         </>
     )
 }

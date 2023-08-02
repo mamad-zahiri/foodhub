@@ -1,0 +1,269 @@
+{
+    "food": [
+        {
+            "id": "1a5da7320d27",
+            "name": "Classic Burger",
+            "description": "dressed, brioche, add cheese or bacon",
+            "price": 35,
+            "imageURL": "menu/food/classic-burger.webp",
+            "rank": 8.6,
+            "isOnPayDay": false
+        },
+        {
+            "id": "41ffa6ef90b7",
+            "name": "Hickory Burger",
+            "description": "bbq sauce, cheddar, bacon, onion rings, dressed (no red onion), bri",
+            "price": 39,
+            "imageURL": "menu/food/hickory-burger.webp",
+            "rank": 7.1,
+            "isOnPayDay": false
+        },
+        {
+            "id": "6946b711b148",
+            "name": "Double Bacon Cheese Burger",
+            "description": "american, bacon, thousand island, brioche bun",
+            "price": 41.5,
+            "imageURL": "menu/food/double-bacon-cheese-burger.webp",
+            "rank": 8.4,
+            "isOnPayDay": false
+        },
+        {
+            "id": "09e8b168d1b2",
+            "name": "Hangover Burger",
+            "description": "sunny-side up egg, american, bacon, waffle fry, dressed, brioche bun",
+            "price": 34.5,
+            "imageURL": "menu/food/hangover-burger.webp",
+            "rank": 8.2,
+            "isOnPayDay": true
+        },
+        {
+            "id": "c91b86e7fd0c",
+            "name": "Jalapeño Jack Burger",
+            "description": "fried jalapeños, pepper jack, spicy mayo, dressed, brioche bun",
+            "price": 38,
+            "imageURL": "menu/food/jalapeño-jack-burger.webp",
+            "rank": 5.2,
+            "isOnPayDay": false
+        },
+        {
+            "id": "963255aa127d",
+            "name": "Scholarship Burger",
+            "description": "smaller version of our classic with american, dressed, brioche bun",
+            "price": 43.5,
+            "imageURL": "menu/food/scholarship-burger.webp",
+            "rank": 9.2,
+            "isOnPayDay": false
+        },
+        {
+            "id": "8b2c5b028552",
+            "name": "Smoked Gouda Turkey Burger",
+            "description": "smoked gouda, bacon, peppadew, spicy mayo, tomato, red onion, spring ",
+            "price": 29,
+            "imageURL": "menu/food/smoked-gouda-turkey-burger.webp",
+            "rank": 7.4,
+            "isOnPayDay": false
+        },
+        {
+            "id": "80f3804510aa",
+            "name": "Surf and Turf Melt",
+            "description": "blackened shrimp, patty, caramelized onions, pickled jalapeños",
+            "price": 28,
+            "imageURL": "menu/food/surf-and-turf-melt.webp",
+            "rank": 9.1,
+            "isOnPayDay": false
+        }
+    ],
+    "starter": [
+        {
+            "id": "881c9f63a14e",
+            "name": "Fried Pickle Chips",
+            "description": "hand battered",
+            "price": 15,
+            "imageURL": "menu/starter/fried-pickle-chips.webp",
+            "rank": 8.7,
+            "isOnPayDay": false
+        },
+        {
+            "id": "70dfd85cff33",
+            "name": "Queso Dip",
+            "description": "jalapeños, tortilla chips",
+            "price": 8,
+            "imageURL": "menu/starter/queso-dip.webp",
+            "rank": 8.4,
+            "isOnPayDay": false
+        },
+        {
+            "id": "ad28ab8b8bf5",
+            "name": "Waffle Cheese Fries",
+            "description": "jack, cheddar, bacon, banana peppers",
+            "price": 17.5,
+            "imageURL": "menu/starter/waffle-cheese-fries.webp",
+            "rank": 7.9,
+            "isOnPayDay": false
+        },
+        {
+            "id": "1c6fe2b0433e",
+            "name": "Spinach & artichoke Dip",
+            "description": "tortilla chips",
+            "price": 9.5,
+            "imageURL": "menu/starter/spinach-&-artichoke-dip.webp",
+            "rank": 8.8,
+            "isOnPayDay": false
+        },
+        {
+            "id": "780068ba3227",
+            "name": "Boudin Balls",
+            "description": "fried spicy pork sausage and rice blend",
+            "price": 12.5,
+            "imageURL": "menu/starter/boudin-balls.webp",
+            "rank": 6.6,
+            "isOnPayDay": false
+        },
+        {
+            "id": "50adeee67f99",
+            "name": "Boom Boom Shrimp",
+            "description": "fried shrimp, boom boom sauce",
+            "price": 19.5,
+            "imageURL": "menu/starter/boom-boom-shrimp.webp",
+            "rank": 5.7,
+            "isOnPayDay": false
+        },
+        {
+            "id": "21ca49c2b481",
+            "name": "Mozzarella Logs",
+            "description": "hand battered with panko breadcrumbs",
+            "price": 11.5,
+            "imageURL": "menu/starter/mozzarella-logs.webp",
+            "rank": 8.4,
+            "isOnPayDay": false
+        },
+        {
+            "id": "fb0d91c0dac3",
+            "name": "Boneless Wings",
+            "description": "buffalo, sweet chili, spicy bbq",
+            "price": 16.5,
+            "imageURL": "menu/starter/boneless-wings.webp",
+            "rank": 5.4,
+            "isOnPayDay": false
+        },
+        {
+            "id": "8fb6e37f7936",
+            "name": "Cheeseburger sliders",
+            "description": "american, ketchup, pickles, brioche bun",
+            "price": 20.5,
+            "imageURL": "menu/starter/cheeseburger-sliders.webp",
+            "rank": 5.9,
+            "isOnPayDay": false
+        },
+        {
+            "id": "997d187900ff",
+            "name": "Fried Alligator",
+            "description": "farm raised, white tail meat, hand battered",
+            "price": 18,
+            "imageURL": "menu/starter/fried-alligator.webp",
+            "rank": 8.8,
+            "isOnPayDay": false
+        },
+        {
+            "id": "34195cd7b32d",
+            "name": "Chicken & Sausage Gumbo",
+            "description": "dark roux, louisiana classic over rice",
+            "price": 10.5,
+            "imageURL": "menu/starter/chicken-&-sausage-gumbo.webp",
+            "rank": 9.1,
+            "isOnPayDay": false
+        },
+        {
+            "id": "3bc8e279a5a5",
+            "name": "Devils On Horseback",
+            "description": "fried jumbo shrimp, cream cheese, pickled jalapeños, wrapped in bacon",
+            "price": 19,
+            "imageURL": "menu/starter/devils-on-horseback.webp",
+            "rank": 6.3,
+            "isOnPayDay": false
+        }
+    ],
+    "beverage": [
+        {
+            "id": "2f9530dd1b3e",
+            "name": "Eddy's Sangria",
+            "description": "Deep Eddy Peach Vodka, Ruffino Pinot Grigio, peach purée, fresh squeezed lemon and orange juice, orange wheel",
+            "price": 9,
+            "imageURL": "menu/beverage/eddy's-sangria.webp",
+            "rank": 7.6,
+            "isOnPayDay": false
+        },
+        {
+            "id": "bb25289b7258",
+            "name": "Raspberry Lemonade",
+            "description": "Grey Goose Vodka, raspberry purée, lemonade, fresh squeezed lemon juice, sugar rim, lemon wheel",
+            "price": 11,
+            "imageURL": "menu/beverage/raspberry-lemonade.webp",
+            "rank": 6.0,
+            "isOnPayDay": false
+        },
+        {
+            "id": "f10e18a99a04",
+            "name": "Mad Mary",
+            "description": "Tito's Handmade Vodka, Zing Zang bloody mary mix, Walk-On's creole seasoning rim, signature mad garnish",
+            "price": 9.5,
+            "imageURL": "menu/beverage/mad-mary.webp",
+            "rank": 8.2,
+            "isOnPayDay": true
+        },
+        {
+            "id": "5d89e7ee7e58",
+            "name": "Blueberry Coconut Mojito",
+            "description": "Malibu Coconut Rum, fresh muddled mint and blueberries, lime wedge",
+            "price": 12,
+            "imageURL": "menu/beverage/blueberry-coconut-mojito.webp",
+            "rank": 7.0,
+            "isOnPayDay": false
+        },
+        {
+            "id": "3cc649c07b7c",
+            "name": "Tiki Rumbull",
+            "description": "Bacardi Superior, Red Bull Coconut Edition, pineapple wedge",
+            "price": 7.5,
+            "imageURL": "menu/beverage/tiki-rumbull.webp",
+            "rank": 8.5,
+            "isOnPayDay": false
+        },
+        {
+            "id": "302917bfa80f",
+            "name": "Skinny Margarita",
+            "description": "Casamigos Blanco Tequila, fresh lime and agave nectar, lime wedge",
+            "price": 5,
+            "imageURL": "menu/beverage/skinny-margarita.webp",
+            "rank": 8.3,
+            "isOnPayDay": false
+        },
+        {
+            "id": "ca83f50eebd0",
+            "name": "Moonshine Swirl",
+            "description": "Peach, Blackberry or Strawberry Ole Smoky Moonshine, swirled with frozen margarita",
+            "price": 7,
+            "imageURL": "menu/beverage/moonshine-swirl.webp",
+            "rank": 8.1,
+            "isOnPayDay": false
+        },
+        {
+            "id": "e8cd0aa8ce6b",
+            "name": "Colada Rocks",
+            "description": "Jack Daniel's, coconut purée, pineapple juice, orange juice, pineapple wedge",
+            "price": 8,
+            "imageURL": "menu/beverage/colada-rocks.webp",
+            "rank": 9.9,
+            "isOnPayDay": false
+        },
+        {
+            "id": "c2bf904b9ab5",
+            "name": "Death Valley",
+            "description": "Svedka Vodka, Don Q Cristal rum, Triple Sec, Razzmatazz, orange juice, pineapple juice, 32 oz. signature cup",
+            "price": 12,
+            "imageURL": "menu/beverage/death-valley.webp",
+            "rank": 7.4,
+            "isOnPayDay": false
+        }
+    ]
+}
