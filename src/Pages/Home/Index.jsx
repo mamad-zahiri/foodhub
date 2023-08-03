@@ -4,6 +4,7 @@ import Categories from "./Categories"
 import PayDay from "../../Components/PayDay"
 import AboutUs from "./AboutUs"
 import Menu from "./Menu"
+import CustomerReview from "./CustomerReview"
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <AboutUs />
             <Hr />
             <Menu />
+            <CustomerReview />
         </>
     )
 }

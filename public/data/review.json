@@ -1,0 +1,26 @@
+[
+    {
+        "id": "066ab7a76dd6",
+        "authorFName": "Emily",
+        "authorLName": "Johnson",
+        "review": "Delicious burgers with juicy patties, fresh buns, and addictive fries. Reasonable prices and fast, friendly service.",
+        "designation": "teacher",
+        "avatarURL": "review/01.jpg"
+    },
+    {
+        "id": "6f1780822375",
+        "authorFName": "Sophia",
+        "authorLName": "Thompson",
+        "review": "Mouthwatering burgers with perfectly grilled patties, topped with a variety of flavorful ingredients. Quick service and satisfying portions.",
+        "designation": "graphist",
+        "avatarURL": "review/02.jpg"
+    },
+    {
+        "id": "d2072ccda0fd",
+        "authorFName": "Alex",
+        "authorLName": "Roberts",
+        "review": "Gourmet-style burgers with premium ingredients, creative toppings, and artisan buns. Impeccable flavors and a trendy atmosphere.",
+        "designation": "gardner",
+        "avatarURL": "review/03.jpg"
+    }
+]
