@@ -40,7 +40,7 @@ const Menu = () => {
 
     return (
         <section className="mx-auto my-14 flex max-w-6xl flex-col items-center justify-center gap-x-8 gap-y-8 px-4">
-            <h3 className="font-[Staatliches] text-5xl text-white ">OUR BEST MENU</h3>
+            <h3 className="font-title text-5xl text-white ">OUR BEST MENU</h3>
             <hr className="h-0.5 w-full border-yellow-500 bg-yellow-500 md:w-[150px]" />
             <p className="text-white text-center">
                 Rated by Our Clients: Discover the Top 4 Food, Beverage, and Starter Items in Each Category!

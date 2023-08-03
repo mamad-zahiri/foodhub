@@ -9,7 +9,7 @@ const AboutUs = () => {
             </figure>
 
             <div className="flex w-full flex-col items-center justify-center gap-y-7 text-center sm:items-start sm:text-left lg:w-1/2">
-                <h4 className="font-[Staatliches] text-5xl text-white">FIND YOUR BEST TASTED FOOD & DRINK JUST IN ONE PLACE</h4>
+                <h4 className="font-title text-5xl text-white">FIND YOUR BEST TASTED FOOD & DRINK JUST IN ONE PLACE</h4>
                 <hr className="h-0.5 w-full border-yellow-500 bg-yellow-500 md:w-1/4" />
                 <p className="text-sm text-slate-300">
                     This is FoodHub! Welcome to our awesome fast food joint. We're all about serving up mouth-watering burgers, and yummy

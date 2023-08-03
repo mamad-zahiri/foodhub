@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <div className="sticky z-10 mx-auto flex max-w-6xl justify-between bg-transparent p-4">
-            <Link to="/" className="font-[Staatliches] text-4xl font-extrabold text-white">
+            <Link to="/" className="font-title text-4xl font-extrabold text-white">
                 <span className="text-yellow-400">Food</span>Hub
             </Link>
 

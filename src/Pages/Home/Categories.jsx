@@ -11,7 +11,7 @@ const Categories = () => {
                     alt="Hamburger"
                 />
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
-                    <h4 className="font-[Staatliches] text-4xl text-white">FOOD</h4>
+                    <h4 className="font-title text-4xl text-white">FOOD</h4>
                     <p className="text-xs text-white">A warm family dinner</p>
                     <BuyOneBtn href="" fg="text-red-700" />
                 </div>
@@ -24,7 +24,7 @@ const Categories = () => {
                     alt="Hamburger"
                 />
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
-                    <h4 className="font-[Staatliches] text-4xl text-white">SNACK</h4>
+                    <h4 className="font-title text-4xl text-white">SNACK</h4>
                     <p className="text-xs text-white">Have with your friends</p>
                     <BuyOneBtn fg="text-green-700" />
                 </div>
@@ -37,7 +37,7 @@ const Categories = () => {
                     alt="Hamburger"
                 />
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
-                    <h4 className="font-[Staatliches] text-4xl text-white">BEVERAGE</h4>
+                    <h4 className="font-title text-4xl text-white">BEVERAGE</h4>
                     <p className="text-xs text-white">For your hot days</p>
                     <BuyOneBtn fg="text-amber-600" />
                 </div>

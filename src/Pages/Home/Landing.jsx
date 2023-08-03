@@ -16,7 +16,7 @@ const Landing = () => {
                     </figure>
 
                     <div className="flex w-full flex-col items-center justify-center gap-y-10 text-center md:w-3/5 md:items-start md:text-left">
-                        <h2 className="font-[Staatliches] text-4xl font-extrabold text-white md:text-6xl">
+                        <h2 className="font-title text-4xl font-extrabold text-white md:text-6xl">
                             ENJOY <span className="text-yellow-400">FOOD</span>HUB MAKE YOUR TUMMY HAPPY
                         </h2>
 
