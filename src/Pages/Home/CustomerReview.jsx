@@ -15,7 +15,7 @@ const CustomerReview = () => {
 
     return (
         <div className="bg-[#111111]">
-            <SectionFlex className="text-white sm:flex-row flex-wrap">
+            <SectionFlex className="text-white sm:flex-row flex-wrap mb-0 pb-20">
                 <h3 className="w-full text-center font-title text-5xl font-bold mt-14 mb-6 px-4 tracking-wide">
                     CUSTOMER REVIEW
                     <hr className="mx-auto h-0.5 w-full border-yellow-500 bg-yellow-500 md:w-36 mt-8" />
