@@ -48,5 +48,3 @@ export default {
     },
     plugins: [],
 }
-
-// x =
