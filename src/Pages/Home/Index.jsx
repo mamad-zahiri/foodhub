@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs"
 import Menu from "./Menu"
 import CustomerReview from "./CustomerReview"
 import SpecialOffer from "./SpecialOffer"
+import NewsAndArticles from "./NewsAndArticles"
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Menu />
             <CustomerReview />
             <SpecialOffer />
+            <NewsAndArticles />
         </>
     )
 }
