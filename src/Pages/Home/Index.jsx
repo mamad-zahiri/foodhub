@@ -8,6 +8,7 @@ import CustomerReview from "./CustomerReview"
 import SpecialOffer from "./SpecialOffer"
 import NewsAndArticles from "./NewsAndArticles"
 import Subscribe from "../../Components/Subscribe"
+import Footer from "../../Components/Footer"
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <SpecialOffer />
             <NewsAndArticles />
             <Subscribe />
+            <Footer />
         </>
     )
 }

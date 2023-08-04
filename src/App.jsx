@@ -22,7 +22,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/menu" element={<Menu />} />
             </Routes>
-            <div className="mt-40"></div>
+            {/* <div className="mt-40"></div> */}
         </>
     )
 }
