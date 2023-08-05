@@ -6,7 +6,8 @@ const Footer = () => {
                     <span className="text-yellow-500">FOOD</span>HUB
                 </h1>
                 <p className="text-sm capitalize">
-                    Ok, a person who got here definitely loves us. It's our end, But can be the beginning of your delicious trip!
+                    Well, the person who got down here definitely likes us. This is our end. Or maybe the beginning of your delicious
+                    journey!
                 </p>
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/4 p-8 pb-0">
