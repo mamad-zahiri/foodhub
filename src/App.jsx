@@ -6,6 +6,8 @@ import Home from "./Pages/Home/Index"
 import About from "./Pages/About/Index"
 import Contact from "./Pages/Contact/Index"
 import Menu from "./Pages/Menu/Index"
+import Subscribe from "./Components/Subscribe"
+import Footer from "./Components/Footer"
 
 // const Home = React.lazy(() => import("./Pages/Home/Index"))
 // const About = React.lazy(() => import("./Pages/About/Index"))
@@ -16,13 +18,16 @@ function App() {
     return (
         <>
             <Header />
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/menu" element={<Menu />} />
             </Routes>
-            {/* <div className="mt-40"></div> */}
+
+            <Subscribe />
+            <Footer />
         </>
     )
 }
