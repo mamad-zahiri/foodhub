@@ -3,9 +3,9 @@ import { getImageUrl } from "../../utils/helper"
 const Landing = () => {
     return (
         // landing page background
-        <div className="-z-10 min-h-fit w-full translate-y-[-72px] transform bg-[url('/home-page-bg.png')] bg-cover bg-no-repeat pt-[72px]">
+        <div className="-z-10 min-h-screen w-full bg-[url('/home-page-bg.png')] bg-cover bg-no-repeat">
             {/* landing page: start */}
-            <section className="relative flex min-h-[calc(100vh-72px)] w-full items-center bg-gradient-to-b from-transparent to-black">
+            <section className="relative flex min-h-screen w-full items-center bg-gradient-to-b from-transparent to-black">
                 <div className="mx-auto flex min-h-full max-w-6xl flex-col items-center justify-center gap-x-20 gap-y-10 px-4 py-4 md:flex-row md:gap-y-14">
                     <figure className="w-xs px-8 md:w-2/5 md:px-0">
                         <img
@@ -43,11 +43,8 @@ const Landing = () => {
                                 <figcaption className="text-sm font-bold text-white">Organic</figcaption>
                             </figure>
 
-                            <a
-                                href=""
-                                className="duration-400 flex h-[40px] flex-shrink-0 items-center justify-center rounded-md bg-yellow-400 p-5 text-sm font-bold text-slate-900 transition-all hover:-translate-y-1 hover:transform hover:shadow-md hover:shadow-gray-700"
-                            >
-                                More<span className="hidden sm:inline">&nbsp;...</span>
+                            <a href="" className="rounded-md bg-yellow-400 p-3 px-6 text-sm text-black">
+                                More ...
                             </a>
                         </div>
                     </div>

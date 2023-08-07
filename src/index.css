@@ -4,3 +4,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .navbar-scrolled-bg {
+        @apply bg-gray-700 bg-opacity-40 backdrop-blur-md transition-all duration-700
+    }
+
+    @keyframes navbar-fade-out {
+        0% {
+            @apply bg-gray-800 bg-opacity-50 backdrop-blur-lg
+        }
+
+        100% {
+            @apply bg-transparent backdrop-blur-0
+        }
+    }
+
+    @keyframes mobile-nav-show {
+        0% {
+            @apply -left-[100%]
+        }
+
+        100% {
+            @apply left-0
+        }
+    }
+}

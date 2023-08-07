@@ -37,6 +37,8 @@ export default {
                 "up-down": "up-down 2s ease-in-out infinite",
                 wiggle: "wiggle 1s ease infinite",
                 "fade-in": "fade-in 0.3s ease-in-out",
+                "navbar-fade-out": "navbar-fade-out 0.3s ease-in-out",
+                "mobile-nav-show": "mobile-nav-show 0.3s ease-in-out",
             },
             dropShadow: {
                 dark: "0 35px 25px #000",

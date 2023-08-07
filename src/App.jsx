@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import React from "react"
 
-import Header from "./Components/Header"
+import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/Index"
 import About from "./Pages/About/Index"
 import Contact from "./Pages/Contact/Index"
@@ -17,7 +17,7 @@ import Footer from "./Components/Footer"
 function App() {
     return (
         <>
-            <Header />
+            <Navbar />
 
             <Routes>
                 <Route path="/" element={<Home />} />
