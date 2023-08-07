@@ -21,4 +21,16 @@ const BuyOneBtn = ({ bg, fg, href, className, children }) => (
     </a>
 )
 
-export { SectionFlex, Hr, BuyOneBtn }
+const paginationCurrentButton = (no, onClick = () => {}) => (
+    <button onClick={onClick} className="text-yellow-500 underline underline-offset-2">
+        {no}
+    </button>
+)
+
+const paginationButton = (no, onClick = () => {}) => (
+    <button onClick={onClick} className="hover:text-yellow-500">
+        {no}
+    </button>
+)
+
+export { SectionFlex, Hr, BuyOneBtn, paginationCurrentButton, paginationButton }
