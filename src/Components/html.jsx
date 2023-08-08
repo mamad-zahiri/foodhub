@@ -33,4 +33,23 @@ const paginationButton = (no, onClick = () => {}) => (
     </button>
 )
 
-export { SectionFlex, Hr, BuyOneBtn, paginationCurrentButton, paginationButton }
+const Header = ({ title, description, bgImage }) => {
+    return (
+        <div
+            className="-z-10 w-full mb-5"
+            style={{
+                backgroundImage: `url('${import.meta.env.BASE_URL}${bgImage}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}
+        >
+            <div className="w-full py-44 px-4 flex flex-col items-center justify-center gap-y-8 bg-gradient-to-b  from-[#000b] to-[#000000f8]">
+                <h2 className="font-title text-6xl font-extrabold text-white tracking-wide">{title}</h2>
+                <hr className="h-0.5 w-[100px] rounded-full border-yellow-400 bg-yellow-400" />
+                <p className="text-base text-white max-w-lg text-center">{description}</p>
+            </div>
+        </div>
+    )
+}
+
+export { SectionFlex, Hr, BuyOneBtn, paginationCurrentButton, paginationButton, Header }
