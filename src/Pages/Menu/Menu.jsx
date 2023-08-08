@@ -64,7 +64,7 @@ const Menu = () => {
 
     return (
         <section className="mx-auto my-6 flex max-w-6xl flex-col items-center justify-center px-4">
-            <ul aria-label="menu-category-nav" className="text-md flex items-center justify-center gap-x-8 text-white">
+            <ul aria-label="menu-category-nav" className="text-md flex items-center justify-center gap-x-8 text-white mb-8">
                 {categories.map((item) => (
                     <li
                         className={`rounded-lg px-4 py-2 sm:px-8 sm:py-4 transition-all ${
@@ -77,48 +77,6 @@ const Menu = () => {
                     </li>
                 ))}
             </ul>
-
-            {/* top pagination: start */}
-            <div className="p-4 mx-auto w-fit text-sm text-white [&>button]:mx-2">
-                <button
-                    className="underline underline-offset-2 text-white hover:text-yellow-500"
-                    onClick={() => setPageNo((pn) => (pn > 1 ? pn - 1 : pn))}
-                >
-                    prev
-                </button>
-
-                {pageNo == 1 ? paginationCurrentButton(1) : paginationButton(1, (e) => setPageNo(1))}
-
-                {/* 1 ... n-1 n: pageNo <  */}
-                {maxPageNo(menuLen) >= 4 && pageNo >= 3 && "..."}
-
-                {/* for active pages more than first and last */}
-                {maxPageNo(menuLen) >= 3 &&
-                    pageNo !== 1 &&
-                    pageNo !== maxPageNo(menuLen) &&
-                    (pageNo !== 1 && pageNo !== maxPageNo(menuLen) ? paginationCurrentButton(pageNo) : paginationButton(pageNo))}
-
-                {maxPageNo(menuLen) >= 3 && pageNo == 1 && paginationButton(2, (e) => setPageNo(2))}
-
-                {maxPageNo(menuLen) >= 3 &&
-                    pageNo == maxPageNo(menuLen) &&
-                    paginationButton(maxPageNo(menuLen) - 1, (e) => setPageNo(maxPageNo(menuLen) - 1))}
-
-                {/* 1 2 ... n: 2 < pageNo  */}
-                {maxPageNo(menuLen) >= 4 && pageNo <= maxPageNo(menuLen) - 2 && "..."}
-
-                {pageNo == maxPageNo(menuLen)
-                    ? paginationCurrentButton(maxPageNo(menuLen))
-                    : paginationButton(maxPageNo(menuLen), (e) => setPageNo(maxPageNo(menuLen)))}
-
-                <button
-                    className="underline underline-offset-2 text-white hover:text-yellow-500"
-                    onClick={() => setPageNo((pn) => (pn * itemPerPage < menuLen ? pn + 1 : pn))}
-                >
-                    next
-                </button>
-            </div>
-            {/* top pagination: end */}
 
             {/* menu items: start */}
             <div id={`menu-${selectedCategory}`} className="flex w-full flex-wrap justify-center">
@@ -162,11 +120,8 @@ const Menu = () => {
             {/* menu items: end */}
 
             {/* bottom pagination: start (for tablet & mobile) */}
-            <div className="lg:hidden p-4 mx-auto w-fit text-sm text-white [&>button]:mx-2">
-                <button
-                    className="underline underline-offset-2 text-white hover:text-yellow-500"
-                    onClick={() => setPageNo((pn) => (pn > 1 ? pn - 1 : pn))}
-                >
+            <div className="p-4 mx-auto w-fit text-sm text-white [&>button]:mx-2">
+                <button className="px-2 py-1 rounded-md text-black bg-yellow-500" onClick={() => setPageNo((pn) => (pn > 1 ? pn - 1 : pn))}>
                     prev
                 </button>
 
@@ -190,12 +145,13 @@ const Menu = () => {
                 {/* 1 2 ... n: 2 < pageNo  */}
                 {maxPageNo(menuLen) >= 4 && pageNo <= maxPageNo(menuLen) - 2 && "..."}
 
-                {pageNo == maxPageNo(menuLen)
-                    ? paginationCurrentButton(maxPageNo(menuLen))
-                    : paginationButton(maxPageNo(menuLen), (e) => setPageNo(maxPageNo(menuLen)))}
+                {maxPageNo(menuLen) !== 1 &&
+                    (pageNo == maxPageNo(menuLen)
+                        ? paginationCurrentButton(maxPageNo(menuLen))
+                        : paginationButton(maxPageNo(menuLen), (e) => setPageNo(maxPageNo(menuLen))))}
 
                 <button
-                    className="underline underline-offset-2 text-white hover:text-yellow-500"
+                    className="px-2 py-1 rounded-md text-black bg-yellow-500"
                     onClick={() => setPageNo((pn) => (pn * itemPerPage < menuLen ? pn + 1 : pn))}
                 >
                     next
