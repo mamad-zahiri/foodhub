@@ -1,0 +1,38 @@
+[
+    {
+        "id": "2a40dcf6c908",
+        "no": 1,
+        "question": "How I can order FoodHub menu online?",
+        "answer": "Ordering from FoodHub is easy! Simply visit our website or download our mobile app, create an account, browse our menu, select your desired items, and proceed to checkout."
+    },
+    {
+        "id": "b47de1a775fe",
+        "no": 2,
+        "question": "Is FoodHub food is healthy to eat?",
+        "answer": "Absolutely! At FoodHub, we prioritize offering a variety of healthy options. Our menu includes nutritious choices such as salads, grilled items, and vegetarian/vegan dishes. We also provide detailed nutritional information to help you make informed choices."
+    },
+    {
+        "id": "f903884afac2",
+        "no": 3,
+        "question": "Where I can find the FoodHub menu online?",
+        "answer": "You can easily access our menu on our website or mobile app. Simply visit our homepage and click on the \"Menu\" tab to explore our delicious offerings."
+    },
+    {
+        "id": "4397260f85f2",
+        "no": 4,
+        "question": "How I can apply as member of FoodHub bar?",
+        "answer": "If you're interested in joining our bar team, please visit the \"Careers\" section on our website. There, you'll find information on current job openings and instructions on how to apply."
+    },
+    {
+        "id": "06c5d7f68815",
+        "no": 5,
+        "question": "How to book a reservation online at FoodHub?",
+        "answer": "Currently, we do not accept reservations at FoodHub. However, you can still enjoy our food by placing an online order for pickup or delivery."
+    },
+    {
+        "id": "a7dfa3622b53",
+        "no": 6,
+        "question": "Does FoodHub have a outdoor restaurant?",
+        "answer": "At the moment, FoodHub operates exclusively as an online fast food restaurant. We do not have a physical outdoor dining area. However, you can enjoy our food in the comfort of your own home through our convenient delivery or pickup options."
+    }
+]
