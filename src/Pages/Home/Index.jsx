@@ -4,8 +4,8 @@ import Categories from "./Categories"
 import PayDay from "../../Components/PayDay"
 import AboutUs from "./AboutUs"
 import Menu from "./Menu"
-import CustomerReview from "./CustomerReview"
-import SpecialOffer from "./SpecialOffer"
+import CustomerReview from "../../Components/CustomerReview"
+import SpecialOffer from "../../Components/SpecialOffer"
 import NewsAndArticles from "./NewsAndArticles"
 
 const Home = () => {

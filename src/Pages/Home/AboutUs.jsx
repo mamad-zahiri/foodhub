@@ -1,9 +1,8 @@
-import { SectionFlex } from "../../Components/html"
 import { getImageUrl } from "../../utils/helper"
 
 const AboutUs = () => {
     return (
-        <SectionFlex className="gap-x-8 px-4 lg:px-0">
+        <section className="mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row gap-x-8 px-4 lg:px-0">
             <figure className="mb-7 flex w-full lg:mb-0 lg:w-1/2">
                 <img src={getImageUrl("home-our-brand.jpg")} alt="foodhub brand" className="max-w-full rotate-180 rounded-2xl" />
             </figure>
@@ -36,7 +35,7 @@ const AboutUs = () => {
                 </ul>
                 <button className="rounded-sm bg-yellow-500 px-7 py-3 font-normal">About Us</button>
             </div>
-        </SectionFlex>
+        </section>
     )
 }
 

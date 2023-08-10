@@ -1,12 +1,3 @@
-const SectionFlex = (props) => {
-    const { children, className } = props
-    return (
-        <section className={"mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row " + className}>
-            {children}
-        </section>
-    )
-}
-
 const Hr = () => <hr className="mx-auto max-w-sm border-gray-800 md:max-w-xl lg:max-w-4xl" />
 
 const BuyOneBtn = ({ bg, fg, href, className, children }) => (
@@ -52,4 +43,4 @@ const Header = ({ title, description, bgImage }) => {
     )
 }
 
-export { SectionFlex, Hr, BuyOneBtn, paginationCurrentButton, paginationButton, Header }
+export { Hr, BuyOneBtn, paginationCurrentButton, paginationButton, Header }

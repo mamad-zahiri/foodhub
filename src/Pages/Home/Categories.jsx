@@ -1,9 +1,9 @@
-import { SectionFlex, BuyOneBtn } from "../../Components/html"
+import { BuyOneBtn } from "../../Components/html"
 import { getImageUrl } from "../../utils/helper"
 
 const Categories = () => {
     return (
-        <SectionFlex className="gap-x-20 gap-y-10 p-4 md:gap-y-14">
+        <section className="mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row gap-x-20 gap-y-10 p-4 md:gap-y-14">
             <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                 <img
                     src={getImageUrl("home-categories-hamburger.png")}
@@ -42,7 +42,7 @@ const Categories = () => {
                     <BuyOneBtn fg="text-amber-600" />
                 </div>
             </div>
-        </SectionFlex>
+        </section>
     )
 }
 
