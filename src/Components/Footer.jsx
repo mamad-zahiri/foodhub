@@ -1,3 +1,6 @@
+import { changeDocTitle } from "../utils/document"
+import { Link } from "react-router-dom"
+
 const Footer = () => {
     return (
         <footer className="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row flex-wrap text-white">
@@ -14,7 +17,9 @@ const Footer = () => {
                 <h3 className="font-title text-2xl font-bold tracking-wider mb-2">Support</h3>
                 <ul className="flex flex-col gap-y-2">
                     <li>
-                        <a href="">FAQ's</a>
+                        <Link to="/faq" onClick={() => changeDocTitle("FAQ - FoodHub")}>
+                            FAQ's
+                        </Link>
                     </li>
                     <li>
                         <a href="">Privacy Policy</a>

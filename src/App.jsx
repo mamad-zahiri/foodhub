@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Index"
 import About from "./Pages/About/Index"
 import Contact from "./Pages/Contact/Index"
 import Menu from "./Pages/Menu/Index"
+import FAQ from "./Pages/FAQ/Index"
 import Subscribe from "./Components/Subscribe"
 import Footer from "./Components/Footer"
 
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/menu" element={<Menu />} />
+                <Route path="/faq" element={<FAQ />} />
             </Routes>
 
             <Subscribe />
