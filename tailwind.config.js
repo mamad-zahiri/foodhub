@@ -42,9 +42,11 @@ export default {
             },
             dropShadow: {
                 dark: "0 35px 25px #000",
+                "dark-sm": "0 20px 25px #000",
             },
             fontFamily: {
                 title: ["Staatliches"],
+                handwriting: ['"Mrs Saint Delafield"'],
             },
         },
     },

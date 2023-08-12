@@ -3,7 +3,7 @@ import { BuyOneBtn } from "./html"
 
 const PayDay = () => {
     return (
-        <section className=" mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row my-14">
+        <section className=" mx-auto flex max-w-6xl flex-col items-center justify-center md:flex-row my-14">
             <div className="mb-5 max-w-[500px] px-5">
                 <div className="flex items-center justify-between rounded-md bg-slate-800 bg-opacity-50 shadow-lg">
                     <div className="flex w-3/5 flex-col items-start justify-center gap-y-2 px-4 py-4 sm:py-8">
