@@ -1,10 +1,10 @@
-import { getImageUrl } from "../../utils/helper"
+import { absURL } from "../../utils/helper"
 
 const AboutUs = () => {
     return (
         <section className="mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row gap-x-8 px-4 lg:px-0">
             <figure className="mb-7 flex w-full lg:mb-0 lg:w-1/2">
-                <img src={getImageUrl("home-our-brand.jpg")} alt="foodhub brand" className="max-w-full rotate-180 rounded-2xl" />
+                <img src={absURL("/img/home/about/about.jpg")} alt="foodhub brand" className="max-w-full rotate-180 rounded-2xl" />
             </figure>
 
             <div className="flex w-full flex-col items-center justify-center gap-y-7 text-center sm:items-start sm:text-left lg:w-1/2">
@@ -21,16 +21,16 @@ const AboutUs = () => {
                         [&>li>img]:mr-2 [&>li>img]:h-auto [&>li>img]:w-4 [&>li]:flex [&>li]:w-1/2"
                 >
                     <li>
-                        <img src={getImageUrl("check.png")} alt="check" /> Best Price
+                        <img src={absURL("/img/icons/check.png")} alt="check" /> Best Price
                     </li>
                     <li>
-                        <img src={getImageUrl("check.png")} alt="check" /> Best Service
+                        <img src={absURL("/img/icons/check.png")} alt="check" /> Best Service
                     </li>
                     <li>
-                        <img src={getImageUrl("check.png")} alt="check" /> Fresh Ingredient
+                        <img src={absURL("/img/icons/check.png")} alt="check" /> Fresh Ingredient
                     </li>
                     <li>
-                        <img src={getImageUrl("check.png")} alt="check" /> Health Protocol
+                        <img src={absURL("/img/icons/check.png")} alt="check" /> Health Protocol
                     </li>
                 </ul>
                 <button className="rounded-sm bg-yellow-500 px-7 py-3 font-normal">About Us</button>

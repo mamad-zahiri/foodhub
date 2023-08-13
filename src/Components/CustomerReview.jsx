@@ -1,12 +1,13 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { absURL } from "../utils/helper"
 
 const CustomerReview = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
         axios
-            .get("./data/review.json")
+            .get(absURL("/data/review.json"))
             .then((response) => setReviews(response.data))
             .catch((error) => console.log(error))
     }, [])
@@ -31,7 +32,7 @@ const CustomerReview = () => {
 
                                 <div className="flex justify-between">
                                     <div className="flex">
-                                        <img className="w-14 rounded-full" src={`./img/${item.avatarURL}`} alt="" />
+                                        <img className="w-14 rounded-full" src={absURL("/img/" + item.avatarURL)} alt="" />
 
                                         <p className="ml-2 font-title text-lg tracking-wider">
                                             {item.authorFName} {item.authorLName}

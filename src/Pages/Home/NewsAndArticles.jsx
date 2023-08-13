@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
+import { absURL } from "../../utils/helper"
 
 const NewsAndArticles = () => {
     const [news, setNews] = useState([])
 
     useEffect(() => {
         axios
-            .get(`${import.meta.env.BASE_URL}data/news.json`)
+            .get(absURL("/data/news.json"))
             .then((response) => setNews(response.data))
             .catch((error) => console.log(error))
     }, [])
@@ -23,7 +24,7 @@ const NewsAndArticles = () => {
                         <div className=" text-white relative h-full text-left">
                             <div
                                 style={{
-                                    background: `url(${import.meta.env.BASE_URL}img/${item.headerImageURL})`,
+                                    background: `url('${absURL("/img/" + item.headerImageURL)}')`,
                                     backgroundPosition: "center",
                                     backgroundSize: "cover",
                                 }}

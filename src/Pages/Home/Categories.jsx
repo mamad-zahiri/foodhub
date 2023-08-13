@@ -1,12 +1,12 @@
 import { BuyOneBtn } from "../../Components/html"
-import { getImageUrl } from "../../utils/helper"
+import { absURL } from "../../utils/helper"
 
 const Categories = () => {
     return (
-        <section className="mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row gap-x-20 gap-y-10 p-4 md:gap-y-14">
+        <section className="mx-auto my-14 max-w-6xl flex flex-col flex-wrap items-center justify-center md:flex-row gap-x-20 gap-y-10 p-4 md:gap-y-14">
             <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                 <img
-                    src={getImageUrl("home-categories-hamburger.png")}
+                    src={absURL("/img/home/categories/hamburger.png")}
                     className="absolute bottom-2 left-[-18px] w-44 drop-shadow-dark"
                     alt="Hamburger"
                 />
@@ -19,7 +19,7 @@ const Categories = () => {
 
             <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-green-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                 <img
-                    src={getImageUrl("home-categories-chips.png")}
+                    src={absURL("/img/home/categories/chips.png")}
                     className="absolute bottom-3 left-[-25px] w-48 drop-shadow-dark"
                     alt="Hamburger"
                 />
@@ -32,9 +32,9 @@ const Categories = () => {
 
             <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-amber-500 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
                 <img
-                    src={getImageUrl("home-categories-smoothie.png")}
+                    src={absURL("/img/home/categories/smoothie.png")}
                     className="absolute bottom-2 left-[0px] w-36 transform drop-shadow-dark"
-                    alt="Hamburger"
+                    alt="Smoothie"
                 />
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                     <h4 className="font-title text-4xl text-white">BEVERAGE</h4>

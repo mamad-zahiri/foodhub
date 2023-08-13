@@ -1,4 +1,4 @@
-import { getImageUrl } from "../utils/helper"
+import { absURL } from "../utils/helper"
 import { BuyOneBtn } from "./html"
 
 const PayDay = () => {
@@ -13,7 +13,7 @@ const PayDay = () => {
                         <BuyOneBtn bg="bg-yellow-400" />
                     </div>
                     <figure className="flex w-2/5 items-center justify-center">
-                        <img src={getImageUrl("home-off-hamburger.png")} alt="cola drink off" className="w-44 drop-shadow-dark" />
+                        <img src={absURL("/img/home/discount/hamburger.png")} alt="cola drink off" className="w-44 drop-shadow-dark" />
                     </figure>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const PayDay = () => {
                         <BuyOneBtn bg="bg-yellow-400" />
                     </div>
                     <figure className="flex w-2/5 items-center justify-center">
-                        <img src={getImageUrl("home-off-drink.png")} alt="cola drink off" className="w-44 drop-shadow-dark" />
+                        <img src={absURL("/img/home/discount/drink.png")} alt="cola drink off" className="w-44 drop-shadow-dark" />
                     </figure>
                 </div>
             </div>

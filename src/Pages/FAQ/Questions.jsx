@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { absURL } from "../../utils/helper"
 
 const Questions = () => {
     const [questions, setQuestions] = useState([])
 
     useEffect(() => {
         axios
-            .get(`${import.meta.env.BASE_URL}data/faq-questions.json`)
+            .get(absURL("/data/faq-questions.json"))
             .then((response) => {
                 setQuestions(response.data)
             })
@@ -24,11 +25,7 @@ const Questions = () => {
             <div className="flex flex-wrap gap-y-12 md:px-8 lg:px-0">
                 {questions.map((item) => (
                     <div className="flex h-full items-start w-full lg:w-1/2" key={item.id}>
-                        <img
-                            src={import.meta.env.BASE_URL + "img/icons/question.png"}
-                            alt="question mark"
-                            className="w-8 mx-4 hidden sm:block"
-                        />
+                        <img src={absURL("/img/icons/question.png")} alt="question mark" className="w-8 mx-4 hidden sm:block" />
                         <div className="px-3 sm:px-0">
                             <h4 className="font-title text-2xl tracking-wide mb-2">
                                 <span className="text-yellow-500 sm:hidden">{item.no}. </span>

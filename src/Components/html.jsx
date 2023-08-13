@@ -1,3 +1,5 @@
+import { absURL } from "../utils/helper"
+
 const Hr = () => <hr className="mx-auto max-w-sm border-gray-800 md:max-w-xl lg:max-w-4xl" />
 
 const BuyOneBtn = ({ bg, fg, href, className, children }) => (
@@ -29,7 +31,7 @@ const Header = ({ title, description, bgImage }) => {
         <div
             className="-z-10 w-full mb-5"
             style={{
-                backgroundImage: `url('${import.meta.env.BASE_URL}${bgImage}')`,
+                backgroundImage: `url('${absURL(bgImage)}')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}

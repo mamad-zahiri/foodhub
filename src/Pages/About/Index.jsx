@@ -5,7 +5,7 @@ import DreamCreators from "./DreamCreators"
 
 const pageTitle = "about us"
 const pageDescription = "Discover the story behind our online fast food restaurant and our passion for delivering delicious meals   "
-const bgImage = "img/bg/about-us.jpg"
+const bgImage = "/img/bg/about-us.jpg"
 
 const About = () => {
     return (

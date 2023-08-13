@@ -1,5 +1,5 @@
 import { fadeIn } from "../../utils/style"
-import { getImageUrl } from "../../utils/helper"
+import { absURL } from "../../utils/helper"
 import { BuyOneBtn } from "../../Components/html"
 import { useState, useEffect } from "react"
 import axios from "axios"
@@ -17,7 +17,7 @@ const categoriesTop4 = async (category, setMenu) => {
     if (bestMenu[category] !== null) return setMenu(bestMenu[category])
 
     await axios
-        .get(`${import.meta.env.BASE_URL}data/menu.json`)
+        .get(absURL("/data/menu.json"))
         .then((response) => {
             setMenu((old) => {
                 bestMenu[category] = response.data[category].sort((a, b) => b.rank - a.rank).slice(0, 4)
@@ -67,7 +67,7 @@ const Menu = () => {
                             <div className="aspect-square w-full flex items-center justify-center mb-5">
                                 <div
                                     style={{
-                                        background: `url(./img/${item.imageURL})`,
+                                        background: `url('${absURL("/img/" + item.imageURL)}')`,
                                         backgroundPosition: "center",
                                         backgroundSize: "cover",
                                     }}
@@ -78,7 +78,7 @@ const Menu = () => {
                                     <small className="flex gap-x-1 justify-center backdrop-blur-md items-center rounded-br-3xl px-4 py-1 font-bold bg-slate-900 bg-opacity-20 text-md">
                                         <img
                                             className="inline-block grayscale h-4 mt-0.5 drop-shadow-md"
-                                            src={getImageUrl("icon-heart-yellow-500.png")}
+                                            src={absURL("/img/icons/heart.png")}
                                             alt=""
                                         />
                                         <span>{item.rank} / 10</span>

@@ -1,8 +1,8 @@
-import { fadeIn } from "../../utils/style"
-import { getImageUrl } from "../../utils/helper"
-import { BuyOneBtn, paginationCurrentButton, paginationButton } from "../../Components/html"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import { fadeIn } from "../../utils/style"
+import { absURL } from "../../utils/helper"
+import { BuyOneBtn, paginationCurrentButton, paginationButton } from "../../Components/html"
 
 const categories = [
     { key: "food", display: "Food" },
@@ -20,7 +20,7 @@ const getMenu = async (category, setMenu, pageNo) => {
     if (menuCache[category] !== null) return setMenu(menuCache[category].slice(pageStart, pageStart + itemPerPage))
 
     await axios
-        .get(`${import.meta.env.BASE_URL}data/menu.json`)
+        .get(absURL("/data/menu.json"))
         .then((response) => {
             menuCache[category] = response.data[category]
             if (menuCache[category]) {
@@ -86,7 +86,7 @@ const Menu = () => {
                             <div className="aspect-square w-full flex items-center justify-center mb-5">
                                 <div
                                     style={{
-                                        background: `url(./img/${item.imageURL})`,
+                                        background: `url('${absURL("/img/" + item.imageURL)}')`,
                                         backgroundPosition: "center",
                                         backgroundSize: "cover",
                                     }}
@@ -97,7 +97,7 @@ const Menu = () => {
                                     <small className="flex gap-x-1 justify-center backdrop-blur-md items-center rounded-br-3xl px-4 py-1 font-bold bg-slate-900 bg-opacity-20 text-md">
                                         <img
                                             className="inline-block grayscale h-4 mt-0.5 drop-shadow-md"
-                                            src={getImageUrl("icon-heart-yellow-500.png")}
+                                            src={absURL("/img/icons/heart.png")}
                                             alt=""
                                         />
                                         <span>{item.rank} / 10</span>
