@@ -34,8 +34,6 @@ const Navbar = () => {
         }
     })
 
-    const [activeNav, setActiveNav] = useState("home")
-
     return (
         <div className="fixed top-0 left-0 z-10 w-full">
             {/* desktop nabvar: start */}
@@ -48,28 +46,21 @@ const Navbar = () => {
                         <span className="block w-6 h-0.5 m-1.5 rounded-full bg-white"></span>
                     </button>
                     {/* mobile menu button: end */}
-
                     {/* navbar brand: start */}
                     <Link to="/" className="font-title text-4xl mt-0.5 font-extrabold text-white">
                         <span className="text-yellow-400">Food</span>Hub
                     </Link>
                     {/* navbar brand: end */}
-
                     {/* nabvar: start */}
                     <nav
-                        className="text-md hidden md:flex md:items-center my-auto gap-4 text-slate-100 flex-col md:flex-row hover:[&>a]:text-yellow-500"
+                        className="text-md hidden md:flex md:items-center my-auto gap-4 text-slate-100 flex-col md:flex-row"
                         aria-label="wide-nav"
                     >
                         {navBarItems.map((nav) => {
                             return (
                                 <Link
-                                    className={`px-5 font-bold ${
-                                        activeNav == nav.key ? "text-yellow-400 underline underline-offset-4" : ""
-                                    }`}
-                                    onClick={() => {
-                                        setActiveNav(nav.key)
-                                        changeDocTitle(`${nav.text} - FoodHub`)
-                                    }}
+                                    className="px-5 font-bold hover:text-yellow-500"
+                                    onClick={() => changeDocTitle(`${nav.text} - FoodHub`)}
                                     to={nav.to}
                                     key={nav.key}
                                 >
@@ -99,9 +90,8 @@ const Navbar = () => {
                     {navBarItems.map((nav) => {
                         return (
                             <Link
-                                className={`px-5 font-bold ${activeNav == nav.key ? "text-yellow-400 underline underline-offset-4" : ""}`}
+                                className="px-5 font-bold"
                                 onClick={() => {
-                                    setActiveNav(nav.key)
                                     changeDocTitle(`${nav.text} - FoodHub`)
                                     hideNav()
                                 }}

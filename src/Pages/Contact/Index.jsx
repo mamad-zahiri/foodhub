@@ -2,7 +2,7 @@ import { Hr, Header } from "../../Components/html"
 import ContactForm from "./Contact"
 import GoogleMap from "./GoogleMap"
 
-const pageTitle = "contanct"
+const pageTitle = "contact"
 const pageDescription =
     "Contact us for any inquiries, feedback, or requests. Our team is here to assist you and provide excellent customer support"
 const bgImage = "/img/bg/contact.jpg"
