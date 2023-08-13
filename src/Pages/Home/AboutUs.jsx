@@ -4,10 +4,10 @@ const AboutUs = () => {
     return (
         <section className="mx-auto my-14 flex max-w-6xl flex-col items-center justify-center md:flex-row gap-x-8 px-4 lg:px-0">
             <figure className="mb-7 flex w-full lg:mb-0 lg:w-1/2">
-                <img src={absURL("/img/home/about/about.webp")} alt="foodhub brand" className="max-w-full rotate-180 rounded-2xl" />
+                <img src={absURL("/img/home/about/about.webp")} alt="foodhub brand" className="max-w-full rotate-180 rounded-2xl mx-auto" />
             </figure>
 
-            <div className="flex w-full flex-col items-center justify-center gap-y-7 text-center sm:items-start sm:text-left lg:w-1/2">
+            <div className="flex w-full flex-col items-center justify-center gap-y-7 text-center sm:items-start sm:text-left lg:w-1/2 px-4">
                 <h4 className="font-title text-5xl text-white">FIND YOUR BEST TASTED FOOD & DRINK JUST IN ONE PLACE</h4>
                 <hr className="h-0.5 w-full border-yellow-500 bg-yellow-500 md:w-1/4" />
                 <p className="text-sm text-slate-300">

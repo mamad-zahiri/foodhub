@@ -7,7 +7,7 @@ const Landing = () => {
             {/* landing page: start */}
             <section className="relative flex min-h-screen w-full items-center bg-gradient-to-b from-transparent to-black">
                 <div className="mx-auto flex min-h-full max-w-6xl flex-col items-center justify-center gap-x-20 gap-y-10 px-4 py-4 md:flex-row md:gap-y-14">
-                    <figure className="w-xs px-8 lg:w-2/5 block sm:hidden md:px-0">
+                    <figure className="w-xs px-8 lg:w-2/5 block sm:hidden lg:block md:px-0">
                         <img
                             className="animate-up-down drop-shadow-lg"
                             src={absURL("/img/home/landing/big-hamburger.webp")}
@@ -16,7 +16,7 @@ const Landing = () => {
                     </figure>
 
                     <div className="flex w-full flex-col items-center justify-center gap-y-10 text-center md:w-3/5 md:items-start md:text-left">
-                        <h2 className="font-title text-4xl font-extrabold text-white md:text-6xl">
+                        <h2 className="font-title text-4xl font-extrabold text-white sm:text-6xl">
                             ENJOY <span className="text-yellow-400">FOOD</span>HUB MAKE YOUR TUMMY HAPPY
                         </h2>
 
