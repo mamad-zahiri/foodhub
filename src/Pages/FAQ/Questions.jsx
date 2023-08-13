@@ -25,7 +25,7 @@ const Questions = () => {
             <div className="flex flex-wrap gap-y-12 md:px-8 lg:px-0">
                 {questions.map((item) => (
                     <div className="flex h-full items-start w-full lg:w-1/2" key={item.id}>
-                        <img src={absURL("/img/icons/question.png")} alt="question mark" className="w-8 mx-4 hidden sm:block" />
+                        <img src={absURL("/img/icons/question.webp")} alt="question mark" className="w-8 mx-4 hidden sm:block" />
                         <div className="px-3 sm:px-0">
                             <h4 className="font-title text-2xl tracking-wide mb-2">
                                 <span className="text-yellow-500 sm:hidden">{item.no}. </span>

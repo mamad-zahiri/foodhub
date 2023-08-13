@@ -5,7 +5,7 @@ const Achievements = () => {
         <section className="flex flex-wrap gap-y-16 gap-x-14 max-w-6xl mx-auto p-4 my-8 justify-evenly items-center text-white">
             <div className="w-52 ml-14 relative flex justify-end items-center bg-red-600 p-4 rounded-lg">
                 <img
-                    src={absURL("/img/about-us/achievements/cooking-hat.png")}
+                    src={absURL("/img/about-us/achievements/cooking-hat.webp")}
                     className="w-48 drop-shadow-dark-sm absolute -left-20"
                     alt="cooking hat"
                 />
@@ -17,7 +17,7 @@ const Achievements = () => {
 
             <div className="w-52 ml-14 relative flex justify-end items-center bg-amber-500 p-4 rounded-lg">
                 <img
-                    src={absURL("/img/about-us/achievements/food.png")}
+                    src={absURL("/img/about-us/achievements/food.webp")}
                     className="w-40 drop-shadow-dark-sm absolute -left-20"
                     alt="dish of food"
                 />
@@ -29,7 +29,7 @@ const Achievements = () => {
 
             <div className="w-52 ml-14 relative flex justify-end items-center bg-green-600 p-4 rounded-lg">
                 <img
-                    src={absURL("/img/about-us/achievements/kiosk.png")}
+                    src={absURL("/img/about-us/achievements/kiosk.webp")}
                     className="w-40 drop-shadow-dark-sm absolute -left-20"
                     alt="kiosk"
                 />

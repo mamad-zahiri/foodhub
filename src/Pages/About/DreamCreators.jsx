@@ -12,17 +12,17 @@ const DreamCreators = () => {
             </div>
 
             <div className="relative rounded-lg overflow-hidden">
-                <img src={absURL("/img/about-us/dream-creators/1.jpg")} className="w-72" alt="Michael Thompson, chef at foodhub" />
+                <img src={absURL("/img/about-us/dream-creators/1.webp")} className="w-72" alt="Michael Thompson, chef at foodhub" />
                 <h6 className="absolute bottom-0 left-0 text-center text-lg bg-[#1115] w-full p-4 backdrop-blur-lg">Michael Thompson</h6>
             </div>
 
             <div className="relative rounded-lg overflow-hidden">
-                <img src={absURL("/img/about-us/dream-creators/2.jpg")} className="w-72" alt="Somchai Thongdee, chef at foodhub" />
+                <img src={absURL("/img/about-us/dream-creators/2.webp")} className="w-72" alt="Somchai Thongdee, chef at foodhub" />
                 <h6 className="absolute bottom-0 left-0 text-center text-lg bg-[#1115] w-full p-4 backdrop-blur-lg">Somchai Thongdee</h6>
             </div>
 
             <div className="relative rounded-lg overflow-hidden">
-                <img src={absURL("/img/about-us/dream-creators/3.jpg")} className="w-72" alt="Marcus Antonius, chef at foodhub" />
+                <img src={absURL("/img/about-us/dream-creators/3.webp")} className="w-72" alt="Marcus Antonius, chef at foodhub" />
                 <h6 className="absolute bottom-0 left-0 text-center text-lg bg-[#1115] w-full p-4 backdrop-blur-lg">Marcus Antonius</h6>
             </div>
         </section>

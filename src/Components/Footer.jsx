@@ -36,12 +36,12 @@ const Footer = () => {
             <div className="w-full sm:w-1/2 lg:w-1/4 p-8 pb-0">
                 <h3 className="font-title text-2xl font-bold tracking-wider">phone</h3>
                 <a href="" className="">
-                    <img src={absURL("/img/icons/phone.png")} alt="phone" className="inline-block w-5 mr-1" />
+                    <img src={absURL("/img/icons/phone.webp")} alt="phone" className="inline-block w-5 mr-1" />
                     +98-912-987-6543
                 </a>
                 <h3 className="font-title text-2xl font-bold tracking-wider mt-6">email</h3>
                 <a href="" className="">
-                    <img src={absURL("/img/icons/envelope.png")} alt="envelope" className="inline-block w-5 mr-1" />
+                    <img src={absURL("/img/icons/envelope.webp")} alt="envelope" className="inline-block w-5 mr-1" />
                     client@foodhub.com
                 </a>
             </div>
@@ -50,23 +50,23 @@ const Footer = () => {
                 <ul className="flex gap-x-4">
                     <li>
                         <a href="">
-                            <img src={absURL("/img/icons/telegram.png")} alt="telegram" className="inline-block w-7" />
+                            <img src={absURL("/img/icons/telegram.webp")} alt="telegram" className="inline-block w-7" />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src={absURL("/img/icons/instagram.png")} alt="instagram" className="inline-block w-7" />
+                            <img src={absURL("/img/icons/instagram.webp")} alt="instagram" className="inline-block w-7" />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src={absURL("/img/icons/linkedin.png")} alt="linkedin" className="inline-block w-7" />
+                            <img src={absURL("/img/icons/linkedin.webp")} alt="linkedin" className="inline-block w-7" />
                         </a>
                     </li>
                 </ul>
                 <h3 className="font-title text-2xl font-bold tracking-wider mt-6">address</h3>
                 <a href="" className="">
-                    <img src={absURL("/img/icons/location.png")} alt="location" className="inline-block w-5 mr-1" />
+                    <img src={absURL("/img/icons/location.webp")} alt="location" className="inline-block w-5 mr-1" />
                     JI. Pantai Kuta No. 34, Badung, Bali
                 </a>
             </div>

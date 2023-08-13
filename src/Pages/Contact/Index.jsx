@@ -5,7 +5,7 @@ import GoogleMap from "./GoogleMap"
 const pageTitle = "contact"
 const pageDescription =
     "Contact us for any inquiries, feedback, or requests. Our team is here to assist you and provide excellent customer support"
-const bgImage = "/img/bg/contact.jpg"
+const bgImage = "/img/bg/contact.webp"
 
 const Contact = () => {
     return (

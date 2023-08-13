@@ -6,7 +6,7 @@ const Welcome = () => {
             <figure className="w-1/2 hidden md:block">
                 <div
                     style={{
-                        backgroundImage: `url('${absURL("/img/bg/about-us.jpg")}')`,
+                        backgroundImage: `url('${absURL("/img/bg/about-us.webp")}')`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}

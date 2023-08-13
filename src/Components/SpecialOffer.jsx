@@ -1,6 +1,6 @@
 const SpecialOffer = () => {
     return (
-        <div className="bg-[url('/img/misc/special-offer-bg.jpg')] bg-center bg-no-repeat bg-cover min-h-screen">
+        <div className="bg-[url('/img/misc/special-offer-bg.webp')] bg-center bg-no-repeat bg-cover min-h-screen">
             <div className="w-full min-h-screen flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-[8px]">
                 <section className="py-24 px-4 max-w-6xl mx-auto text-white">
                     <h3 className="w-full text-center md:w-1/2 md:text-left text-5xl font-bold tracking-wide font-title">

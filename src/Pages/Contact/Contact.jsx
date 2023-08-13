@@ -14,28 +14,28 @@ const ContactForm = () => {
 
                 <div className="flex flex-wrap mb-4">
                     <div className="w-full sm:w-1/2 min-h-full flex items-center">
-                        <img src={absURL("/img/icons/map.png")} alt="location map" className="w-10 m-6" />
+                        <img src={absURL("/img/icons/map.webp")} alt="location map" className="w-10 m-6" />
                         <div>
                             <h4 className="font-title text-3xl tracking-wide">location</h4>
                             <p className="text-gray-300">JI. Pantai Kuta No. 34, Badung, Bali</p>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 min-h-full flex items-center">
-                        <img src={absURL("/img/icons/phone.png")} alt="phone" className="w-10 m-6" />
+                        <img src={absURL("/img/icons/phone.webp")} alt="phone" className="w-10 m-6" />
                         <div>
                             <h4 className="font-title text-3xl tracking-wide">phone</h4>
                             <p className="text-gray-300">+98-912-987-6543</p>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 min-h-full flex items-center">
-                        <img src={absURL("/img/icons/envelope.png")} alt="email" className="w-10 m-6" />
+                        <img src={absURL("/img/icons/envelope.webp")} alt="email" className="w-10 m-6" />
                         <div>
                             <h4 className="font-title text-3xl tracking-wide">email</h4>
                             <p className="text-gray-300">client@foodhub.com</p>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 min-h-full flex items-center">
-                        <img src={absURL("/img/icons/clock.png")} alt="clock" className="w-10 m-6" />
+                        <img src={absURL("/img/icons/clock.webp")} alt="clock" className="w-10 m-6" />
                         <div>
                             <h4 className="font-title text-3xl tracking-wide">open hour</h4>
                             <p className="text-gray-300">10:00 am - 09:00 pm</p>
@@ -50,17 +50,17 @@ const ContactForm = () => {
                     <ul className="flex gap-x-4">
                         <li>
                             <a href="">
-                                <img src={absURL("/img/icons/telegram.png")} alt="telegram" className="inline-block w-7" />
+                                <img src={absURL("/img/icons/telegram.webp")} alt="telegram" className="inline-block w-7" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src={absURL("/img/icons/instagram.png")} alt="instagram" className="inline-block w-7" />
+                                <img src={absURL("/img/icons/instagram.webp")} alt="instagram" className="inline-block w-7" />
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src={absURL("/img/icons/linkedin.png")} alt="linkedin" className="inline-block w-7" />
+                                <img src={absURL("/img/icons/linkedin.webp")} alt="linkedin" className="inline-block w-7" />
                             </a>
                         </li>
                     </ul>
