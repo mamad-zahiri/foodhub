@@ -4,6 +4,8 @@ import { fadeIn } from "../../utils/style"
 import { absURL } from "../../utils/helper"
 import { BuyOneBtn, paginationCurrentButton, paginationButton } from "../../Components/html"
 
+const categories_ = ["food", "starter", "beverage"]
+
 const categories = [
     { key: "food", display: "Food" },
     { key: "starter", display: "Starter" },
@@ -39,8 +41,9 @@ const maxPageNo = (menuLen) => {
     return b
 }
 
-const Menu = () => {
-    const [selectedCategory, setSelectedCategory] = useState("food")
+const Menu = ({ category }) => {
+    category = categories_.indexOf(category) !== -1 ? category : "food"
+    const [selectedCategory, setSelectedCategory] = useState(category)
     const [menu, setMenu] = useState([])
     const [menuLen, setMenuLen] = useState(0)
     const [pageNo, setPageNo] = useState(1)
@@ -97,7 +100,7 @@ const Menu = () => {
                                     <small className="flex gap-x-1 justify-center backdrop-blur-md items-center rounded-br-3xl px-4 py-1 font-bold bg-slate-900 bg-opacity-20 text-md">
                                         <img
                                             className="inline-block grayscale h-4 mt-0.5 drop-shadow-md"
-                                            src={absURL("/img/icons/heart.png")}
+                                            src={absURL("/img/icons/heart.webp")}
                                             alt=""
                                         />
                                         <span>{item.rank} / 10</span>

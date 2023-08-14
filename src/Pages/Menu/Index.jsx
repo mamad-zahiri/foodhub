@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom"
 import { Hr, Header } from "../../Components/html"
 import PayDay from "../../Components/PayDay"
 import MenuSection from "./Menu"
@@ -7,10 +8,11 @@ const pageDescription = "Fast Food, Faster Service. Our delicious menu options m
 const bgImage = "/img/bg/menu.webp"
 
 const Menu = () => {
+    const location_ = useLocation()
     return (
         <>
             <Header title={pageTitle} description={pageDescription} bgImage={bgImage} />
-            <MenuSection />
+            <MenuSection category={location_.state.category} />
             <Hr />
             <PayDay />
         </>

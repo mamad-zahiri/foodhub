@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom"
 import { BuyOneBtn } from "../../Components/html"
 import { absURL } from "../../utils/helper"
 
 const Categories = () => {
+    const navigate = useNavigate()
+
     return (
         <section className="mx-auto my-14 max-w-6xl flex flex-col flex-wrap items-center justify-center md:flex-row gap-x-20 gap-y-10 p-4 md:gap-y-14">
             <div className="relative flex h-32 w-80 items-center justify-end rounded-xl bg-red-700 shadow-2xl shadow-slate-800 [&>img]:hover:animate-wiggle">
@@ -13,7 +16,7 @@ const Categories = () => {
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                     <h4 className="font-title text-4xl text-white">FOOD</h4>
                     <p className="text-xs text-white">A warm family dinner</p>
-                    <BuyOneBtn href="" fg="text-red-700" />
+                    <BuyOneBtn fg="text-red-700" onClick={() => navigate("/menu", { state: { category: "food" } })} />
                 </div>
             </div>
 
@@ -26,7 +29,7 @@ const Categories = () => {
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                     <h4 className="font-title text-4xl text-white">SNACK</h4>
                     <p className="text-xs text-white">Have with your friends</p>
-                    <BuyOneBtn fg="text-green-700" />
+                    <BuyOneBtn fg="text-green-700" onClick={() => navigate("/menu", { state: { category: "starter" } })} />
                 </div>
             </div>
 
@@ -39,7 +42,7 @@ const Categories = () => {
                 <div className="flex w-1/2 flex-col items-start justify-center gap-y-1">
                     <h4 className="font-title text-4xl text-white">BEVERAGE</h4>
                     <p className="text-xs text-white">For your hot days</p>
-                    <BuyOneBtn fg="text-amber-600" />
+                    <BuyOneBtn fg="text-amber-600" onClick={() => navigate("/menu", { state: { category: "beverage" } })} />
                 </div>
             </div>
         </section>

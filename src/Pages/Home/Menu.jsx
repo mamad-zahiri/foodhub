@@ -78,7 +78,7 @@ const Menu = () => {
                                     <small className="flex gap-x-1 justify-center backdrop-blur-md items-center rounded-br-3xl px-4 py-1 font-bold bg-slate-900 bg-opacity-20 text-md">
                                         <img
                                             className="inline-block grayscale h-4 mt-0.5 drop-shadow-md"
-                                            src={absURL("/img/icons/heart.png")}
+                                            src={absURL("/img/icons/heart.webp")}
                                             alt=""
                                         />
                                         <span>{item.rank} / 10</span>
