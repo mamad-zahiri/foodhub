@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom"
+
 const SpecialOffer = () => {
+    const navigate = useNavigate()
+
     return (
         <div className="bg-[url('/img/misc/special-offer-bg.webp')] bg-center bg-no-repeat bg-cover min-h-screen">
             <div className="w-full min-h-screen flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-[8px]">
@@ -16,9 +20,12 @@ const SpecialOffer = () => {
                         style!
                     </p>
 
-                    <a href="" className="block w-fit mx-auto md:mx-0 rounded-md bg-yellow-400 p-5 py-3 text-sm text-slate-900">
+                    <button
+                        className="block w-fit mx-auto md:mx-0 rounded-md bg-yellow-400 p-5 py-3 text-sm text-slate-900"
+                        onClick={() => navigate("/reservation")}
+                    >
                         Book a Reservation
-                    </a>
+                    </button>
                 </section>
             </div>
         </div>

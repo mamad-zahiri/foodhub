@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Index"
 import About from "./Pages/About/Index"
 import Contact from "./Pages/Contact/Index"
 import Menu from "./Pages/Menu/Index"
+import Reservation from "./Pages/Reservation/Index"
 import FAQ from "./Pages/FAQ/Index"
 import Subscribe from "./Components/Subscribe"
 import Footer from "./Components/Footer"
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/about" Component={About} />
                 <Route path="/menu" Component={Menu} />
                 <Route path="/faq" Component={FAQ} />
+                <Route path="/reservation" Component={Reservation} />
                 <Route exact path="/" Component={Home} />
             </Routes>
 

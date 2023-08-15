@@ -8,11 +8,12 @@ const pageDescription = "Fast Food, Faster Service. Our delicious menu options m
 const bgImage = "/img/bg/menu.webp"
 
 const Menu = () => {
-    const location_ = useLocation()
+    const loc = useLocation()
+    const category = loc.state ? loc.state.category : ""
     return (
         <>
             <Header title={pageTitle} description={pageDescription} bgImage={bgImage} />
-            <MenuSection category={location_.state.category} />
+            <MenuSection category={category} />
             <Hr />
             <PayDay />
         </>
