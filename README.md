@@ -10,7 +10,7 @@ Online Food Delivery Service UI
 
 ---
 
-### Nightly Build
+### Nightly Buildd
 
 Every day I made some changes to this project. After that, I publish my changes here and build the project.
 
