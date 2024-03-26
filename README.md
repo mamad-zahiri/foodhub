@@ -14,4 +14,4 @@ Online Food Delivery Service UI
 
 Every day I made some changes to this project. After that, I publish my changes here and build the project.
 
-FoodHub Nightly Build: [Nightly Build](https://mohamad-zahiry.github.io/foodhub/dist/)
+FoodHub Nightly Build: [Nightly Build](https://mamad-zahiri.github.io/foodhub/dist/)
